@@ -1,14 +1,15 @@
-# Boilerplate for VS code environment for data analysis.
+# Boilerplate for the VS code environment for data analysis.
 
-This boilerplate is prepared to develop the code
-in Python, R, and Julia using the Jupyter datascience notebook image,
-and opens files with .ipynb extension within VS code.
+This boilerplate was prepared to develop the code
+in Python, R, and Julia using the Jupyter datascience notebook docker image,
+and enabling working on files with .ipynb extension within VS code.
 
-Key files are `.devcontainer/Dockerfile` and `.devcontainer/devcontainer.json`.
+Two key files are `.devcontainer/Dockerfile` and `.devcontainer/devcontainer.json`.
 
 ## Package version management.
 The package version management relies on each language's
-package designed for that purpose, and information is cached in a local environment.
+package designed for that purpose, and
+that package information is cached in a local environment.
 
 Specifically,
 - Python: `requirements.txt` and `pip`,
@@ -16,10 +17,11 @@ Specifically,
 - Julia: `Project.toml`.
 
 ## Note
-THe extensions for each package should be installed for running in the jupyter notebook.
-Also, for R language, `Jupyter` extension may need to switch to the pre-release version.
+The extensions for each package should be installed to run the code in the jupyter notebook.
+Also, for the R language, you may need to switch
+the version of the `Jupyter` extension to the pre-release one.
 
-## Installed extensions
+## Installed extensions.
 Jupyter
 - Jupyter (may need the pre-release version): "ms-toolsai.jupyter",
 - Jupytext: "donjayamanne.vscode-jupytext",
@@ -38,10 +40,3 @@ Python
 General
 - Grammarly for VS code: "znck.grammarly",
 - Edit csv: "janisdd.vscode-edit-csv",
-
-
-
-
-
-
-
