@@ -36,7 +36,8 @@
                 "znck.grammarly",
                 "janisdd.vscode-edit-csv",
                 "GitHub.copilot",
-                "Gruntfuggly.todo-tree"
+                "Gruntfuggly.todo-tree",
+                "ms-azuretools.vscode-docker"
             ]
         }
     }
