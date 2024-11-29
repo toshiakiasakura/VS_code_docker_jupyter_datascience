@@ -1,9 +1,11 @@
-FROM jupyter/datascience-notebook:julia-1.7.3
-# julia-1.7.3 is required for Turing.jl
+FROM quay.io/jupyter/datascience-notebook:x86_64-julia-1.11.1
+# Note: If you change julia version, the julia version in Manifest.toml
+# should be matched for building Docker image.
 
-WORKDIR /workdir
 EXPOSE 8888
+WORKDIR /workdir
+COPY Project.toml Manifest.toml ./
+RUN julia --project=. -e 'using Pkg; Pkg.instantiate()'
 
-RUN JULIA_PROJECT=/workdir
-ENV DEVCONTAINER=TRUE
-RUN jupyter serverextension enable --py jupyterlab
+# RUN JULIA_PROJECT=/workdir
+# ENV DEVCONTAINER=TRUE
