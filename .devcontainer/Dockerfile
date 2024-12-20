@@ -1,6 +1,8 @@
-FROM quay.io/jupyter/datascience-notebook:x86_64-julia-1.11.1
+FROM quay.io/jupyter/datascience-notebook:julia-1.10.5
 # Note: If you change julia version, the julia version in Manifest.toml
 # should be matched for building Docker image.
+# Note: julia-1.11.1 has a slow launch time, change it to julia-1.10.5
+# and wait for a new release for 1.11.
 
 EXPOSE 8888
 WORKDIR /workdir
